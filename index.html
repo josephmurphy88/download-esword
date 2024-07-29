@@ -34,6 +34,9 @@
             border-radius: 10px;
             transition: transform 0.2s;
             background-color: rgba(255, 255, 255, 0.8);
+            width: 250px;  /* Adjust the width to your preference */
+            height: 150px; /* Adjust the height to your preference */
+            box-sizing: border-box;
         }
         .icon-link:hover {
             transform: translateY(-5px);
@@ -47,10 +50,12 @@
             display: block;
             font-size: 14px;
             font-weight: bold;
+            word-wrap: break-word;
         }
         @media (max-width: 600px) {
             body {
                 background-position: calc(50% - 100px) center;
+                background-size: cover;
             }
             .icon {
                 width: 40px;
@@ -61,6 +66,8 @@
             }
             .icon-link {
                 padding: 10px;
+                width: 100px;  /* Adjust the width for smaller screens */
+                height: 130px; /* Adjust the height for smaller screens */
             }
         }
     </style>
